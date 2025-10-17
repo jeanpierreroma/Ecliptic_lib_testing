@@ -1,0 +1,55 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+build/
+DerivedData/
+xcuserdata/
+*.xcuserdatad
+*.xcscmblueprint
+*.xccheckout
+
+# Xcode project user settings
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.moved-aside
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Packages/
+# Keep Package.resolved (useful for reproducible builds)
+!Package.resolved
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# CocoaPods
+Pods/
+# Keep Podfile.lock if using CocoaPods
+after-merge.sh
+!Podfile.lock
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# IDEs / Editors
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs and temp
+*.log
+*.tmp
+
+# SwiftPM/Xcode previews cache
+.previews/

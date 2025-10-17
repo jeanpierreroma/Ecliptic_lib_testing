@@ -1,0 +1,408 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11432FA02E9FC78800F032C8 /* ecliptix_client.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11432F9F2E9FC78800F032C8 /* ecliptix_client.xcframework */; };
+		11432FB42E9FD0D800F032C8 /* OpenSSL-crypto.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11432FB22E9FD0C600F032C8 /* OpenSSL-crypto.xcframework */; };
+		11C710CD2EA24B440050088D /* OpaqueClient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B168DA2EA1489C00499056 /* OpaqueClient.xcframework */; };
+		11C710D12EA25A490050088D /* Clibsodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C710C62EA23B570050088D /* Clibsodium.xcframework */; };
+		11C710D22EA25A490050088D /* Clibsodium.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C710C62EA23B570050088D /* Clibsodium.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		11C710D32EA25A490050088D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				11C710D22EA25A490050088D /* Clibsodium.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		11432F7B2E9FBBA700F032C8 /* Ecliptix_TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecliptix_TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11432F9D2E9FC4A200F032C8 /* libcertificate.pinning.client.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcertificate.pinning.client.a; path = "../c++/ecliptix-ssl-pinning/dist/ecliptix_client.xcframework/ios-arm64/libcertificate.pinning.client.a"; sourceTree = "<group>"; };
+		11432F9F2E9FC78800F032C8 /* ecliptix_client.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ecliptix_client.xcframework; path = "../c++/ecliptix-ssl-pinning/dist/ecliptix_client.xcframework"; sourceTree = "<group>"; };
+		11432FB02E9FD0AA00F032C8 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../c++/OpenSSL/OpenSSL-crypto.xcframework/ios-arm64/libcrypto.a"; sourceTree = "<group>"; };
+		11432FB22E9FD0C600F032C8 /* OpenSSL-crypto.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "OpenSSL-crypto.xcframework"; path = "../c++/OpenSSL/OpenSSL-crypto.xcframework"; sourceTree = "<group>"; };
+		11B168D82EA1487600499056 /* libopaque_client.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopaque_client.a; path = "../c++/ecliptix-opaque/OpaqueClient.xcframework/ios-arm64/libopaque_client.a"; sourceTree = "<group>"; };
+		11B168DA2EA1489C00499056 /* OpaqueClient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpaqueClient.xcframework; path = "../c++/ecliptix-opaque/OpaqueClient.xcframework"; sourceTree = "<group>"; };
+		11C710C22EA239830050088D /* Clibsodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Clibsodium.xcframework; path = "../c++/libsodium/Clibsodium.xcframework"; sourceTree = "<group>"; };
+		11C710C62EA23B570050088D /* Clibsodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Clibsodium.xcframework; path = "../libsodium/libsodium-apple/Clibsodium.xcframework"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		11432F7D2E9FBBA700F032C8 /* Ecliptix_TestProject */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Ecliptix_TestProject;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11432F782E9FBBA700F032C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C710D12EA25A490050088D /* Clibsodium.xcframework in Frameworks */,
+				11432FA02E9FC78800F032C8 /* ecliptix_client.xcframework in Frameworks */,
+				11C710CD2EA24B440050088D /* OpaqueClient.xcframework in Frameworks */,
+				11432FB42E9FD0D800F032C8 /* OpenSSL-crypto.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		11432F722E9FBBA700F032C8 = {
+			isa = PBXGroup;
+			children = (
+				11432F7D2E9FBBA700F032C8 /* Ecliptix_TestProject */,
+				11432F9C2E9FC4A200F032C8 /* Frameworks */,
+				11432F7C2E9FBBA700F032C8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11432F7C2E9FBBA700F032C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11432F7B2E9FBBA700F032C8 /* Ecliptix_TestProject.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11432F9C2E9FC4A200F032C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				11C710C22EA239830050088D /* Clibsodium.xcframework */,
+				11C710C62EA23B570050088D /* Clibsodium.xcframework */,
+				11B168DA2EA1489C00499056 /* OpaqueClient.xcframework */,
+				11B168D82EA1487600499056 /* libopaque_client.a */,
+				11432FB22E9FD0C600F032C8 /* OpenSSL-crypto.xcframework */,
+				11432FB02E9FD0AA00F032C8 /* libcrypto.a */,
+				11432F9F2E9FC78800F032C8 /* ecliptix_client.xcframework */,
+				11432F9D2E9FC4A200F032C8 /* libcertificate.pinning.client.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11432F7A2E9FBBA700F032C8 /* Ecliptix_TestProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11432F862E9FBBA800F032C8 /* Build configuration list for PBXNativeTarget "Ecliptix_TestProject" */;
+			buildPhases = (
+				11432F772E9FBBA700F032C8 /* Sources */,
+				11432F782E9FBBA700F032C8 /* Frameworks */,
+				11432F792E9FBBA700F032C8 /* Resources */,
+				11C710D32EA25A490050088D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				11432F7D2E9FBBA700F032C8 /* Ecliptix_TestProject */,
+			);
+			name = Ecliptix_TestProject;
+			packageProductDependencies = (
+			);
+			productName = Ecliptix_TestProject;
+			productReference = 11432F7B2E9FBBA700F032C8 /* Ecliptix_TestProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11432F732E9FBBA700F032C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					11432F7A2E9FBBA700F032C8 = {
+						CreatedOnToolsVersion = 26.0;
+						LastSwiftMigration = 2600;
+					};
+				};
+			};
+			buildConfigurationList = 11432F762E9FBBA700F032C8 /* Build configuration list for PBXProject "Ecliptix_TestProject" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11432F722E9FBBA700F032C8;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 11432F7C2E9FBBA700F032C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11432F7A2E9FBBA700F032C8 /* Ecliptix_TestProject */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11432F792E9FBBA700F032C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11432F772E9FBBA700F032C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		11432F842E9FBBA800F032C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 72C73YMCA9;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		11432F852E9FBBA800F032C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 72C73YMCA9;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11432F872E9FBBA800F032C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72C73YMCA9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ecliptix_TestProject",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivan.Ecliptix-TestProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ecliptix_TestProject/Ecliptix_TestProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		11432F882E9FBBA800F032C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72C73YMCA9;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Ecliptix_TestProject",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-lc++";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ivan.Ecliptix-TestProject";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ecliptix_TestProject/Ecliptix_TestProject-Bridging-Header.h";
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11432F762E9FBBA700F032C8 /* Build configuration list for PBXProject "Ecliptix_TestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11432F842E9FBBA800F032C8 /* Debug */,
+				11432F852E9FBBA800F032C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11432F862E9FBBA800F032C8 /* Build configuration list for PBXNativeTarget "Ecliptix_TestProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11432F872E9FBBA800F032C8 /* Debug */,
+				11432F882E9FBBA800F032C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11432F732E9FBBA700F032C8 /* Project object */;
+}
