@@ -6,38 +6,8 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		11432FA02E9FC78800F032C8 /* ecliptix_client.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11432F9F2E9FC78800F032C8 /* ecliptix_client.xcframework */; };
-		11432FB42E9FD0D800F032C8 /* OpenSSL-crypto.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11432FB22E9FD0C600F032C8 /* OpenSSL-crypto.xcframework */; };
-		11C710CD2EA24B440050088D /* OpaqueClient.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B168DA2EA1489C00499056 /* OpaqueClient.xcframework */; };
-		11C710D12EA25A490050088D /* Clibsodium.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11C710C62EA23B570050088D /* Clibsodium.xcframework */; };
-		11C710D22EA25A490050088D /* Clibsodium.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 11C710C62EA23B570050088D /* Clibsodium.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-/* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		11C710D32EA25A490050088D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				11C710D22EA25A490050088D /* Clibsodium.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
 		11432F7B2E9FBBA700F032C8 /* Ecliptix_TestProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ecliptix_TestProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		11432F9D2E9FC4A200F032C8 /* libcertificate.pinning.client.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcertificate.pinning.client.a; path = "../c++/ecliptix-ssl-pinning/dist/ecliptix_client.xcframework/ios-arm64/libcertificate.pinning.client.a"; sourceTree = "<group>"; };
-		11432F9F2E9FC78800F032C8 /* ecliptix_client.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = ecliptix_client.xcframework; path = "../c++/ecliptix-ssl-pinning/dist/ecliptix_client.xcframework"; sourceTree = "<group>"; };
-		11432FB02E9FD0AA00F032C8 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "../c++/OpenSSL/OpenSSL-crypto.xcframework/ios-arm64/libcrypto.a"; sourceTree = "<group>"; };
-		11432FB22E9FD0C600F032C8 /* OpenSSL-crypto.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = "OpenSSL-crypto.xcframework"; path = "../c++/OpenSSL/OpenSSL-crypto.xcframework"; sourceTree = "<group>"; };
-		11B168D82EA1487600499056 /* libopaque_client.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libopaque_client.a; path = "../c++/ecliptix-opaque/OpaqueClient.xcframework/ios-arm64/libopaque_client.a"; sourceTree = "<group>"; };
-		11B168DA2EA1489C00499056 /* OpaqueClient.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OpaqueClient.xcframework; path = "../c++/ecliptix-opaque/OpaqueClient.xcframework"; sourceTree = "<group>"; };
-		11C710C22EA239830050088D /* Clibsodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Clibsodium.xcframework; path = "../c++/libsodium/Clibsodium.xcframework"; sourceTree = "<group>"; };
-		11C710C62EA23B570050088D /* Clibsodium.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Clibsodium.xcframework; path = "../libsodium/libsodium-apple/Clibsodium.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -53,10 +23,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11C710D12EA25A490050088D /* Clibsodium.xcframework in Frameworks */,
-				11432FA02E9FC78800F032C8 /* ecliptix_client.xcframework in Frameworks */,
-				11C710CD2EA24B440050088D /* OpaqueClient.xcframework in Frameworks */,
-				11432FB42E9FD0D800F032C8 /* OpenSSL-crypto.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,14 +49,6 @@
 		11432F9C2E9FC4A200F032C8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				11C710C22EA239830050088D /* Clibsodium.xcframework */,
-				11C710C62EA23B570050088D /* Clibsodium.xcframework */,
-				11B168DA2EA1489C00499056 /* OpaqueClient.xcframework */,
-				11B168D82EA1487600499056 /* libopaque_client.a */,
-				11432FB22E9FD0C600F032C8 /* OpenSSL-crypto.xcframework */,
-				11432FB02E9FD0AA00F032C8 /* libcrypto.a */,
-				11432F9F2E9FC78800F032C8 /* ecliptix_client.xcframework */,
-				11432F9D2E9FC4A200F032C8 /* libcertificate.pinning.client.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -105,7 +63,6 @@
 				11432F772E9FBBA700F032C8 /* Sources */,
 				11432F782E9FBBA700F032C8 /* Frameworks */,
 				11432F792E9FBBA700F032C8 /* Resources */,
-				11C710D32EA25A490050088D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
